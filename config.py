@@ -15,8 +15,8 @@ class Config(object):
     # Get a token from @BotFather
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
     # The Telegram API things
-    API_ID = os.environ.get("API_ID")
-    API_HASH = os.environ.get("API_HASH")
+    API_ID = os.environ.get("API_ID","23159366")
+    API_HASH = os.environ.get("API_HASH", "4623dd30dd1303bddb729eb0862262d9")
     # Get these values from my.telegram.org
     # Array to store users who are authorized to use the bot
 
@@ -35,7 +35,7 @@ class Config(object):
     # Set timeout for subprocess
     PROCESS_MAX_TIMEOUT = 3700
 
-    OWNER_ID = os.environ.get("OWNER_ID")
+    OWNER_ID = os.environ.get("OWNER_ID", "5222155765")
     ADL_BOT_RQ = {}
-    AUTH_USERS = list({int(x) for x in os.environ.get("AUTH_USERS", "0").split()})
+    AUTH_USERS = list({int(x) for x in os.environ.get("AUTH_USERS", "1785450012").split()})
     AUTH_USERS.append(OWNER_ID)
